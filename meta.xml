@@ -1,0 +1,5 @@
+<meta>
+<script src="gui.lua" type="client"/>
+<script src="accountsys_client.lua" type="client"/>
+<script src="accountsys_server.lua" type="server"/>
+</meta>
