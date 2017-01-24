@@ -23,12 +23,12 @@ function tryLoginorRegister(thePlayer,hash)
 				triggerClientEvent(thePlayer, "loginSuccess",resourceRoot,hash)
 			end
 		else
-		acc = addAccount(getPlayerName(thePlayer),generalPW)
-		setAccountData(acc,"user.password", hash)
+			acc = addAccount(getPlayerName(thePlayer),generalPW)
+			setAccountData(acc,"user.password", hash)
 			logPlayerIn(thePlayer,UjF2kVPW)
 		end
 	end
-	end
+end
 addEvent("tryLoginorRegister",true)
 addEventHandler("tryLoginorRegister",root,tryLoginorRegister)
 
@@ -37,14 +37,14 @@ addEventHandler("tryLoginorRegister",root,tryLoginorRegister)
 
 function checkforcommands(command)
 	if command == "login" then
-	cancelEvent()
+		cancelEvent()
 	end
 	if command == "logout" then
-	cancelEvent()
-	kickPlayer(source, "Logging Out")
+		cancelEvent()
+		kickPlayer(source, "Logging Out")
 	end
-
-
-
+	
+	
+	
 end
 addEventHandler("onPlayerCommand", root, checkforcommands)
