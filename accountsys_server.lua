@@ -25,7 +25,7 @@ function tryLoginorRegister(thePlayer,hash)
 		else
 			acc = addAccount(getPlayerName(thePlayer),generalPW)
 			setAccountData(acc,"user.password", hash)
-			logPlayerIn(thePlayer,UjF2kVPW)
+			logPlayerIn(thePlayer,generalPW)
 		end
 	end
 end
